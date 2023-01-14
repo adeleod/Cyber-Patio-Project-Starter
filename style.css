@@ -19,6 +19,26 @@ h1 {
 }
 
 /*
+LOGO
+*/
+
+.logo {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 6rem;
+    grid-column-start: 1;
+}
+
+/*
+    MENU
+*/
+
+.menu {
+    grid-column-start: 6;
+}
+
+/*
     GRID
 */
 
@@ -26,4 +46,5 @@ h1 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
+    margin: 2rem;
 }
