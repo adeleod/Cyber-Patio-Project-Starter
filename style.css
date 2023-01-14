@@ -18,6 +18,13 @@ h1 {
   font-size: 2em;  
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
 /*
 LOGO
 */
@@ -28,6 +35,8 @@ LOGO
     font-size: 4rem;
     line-height: 6rem;
     grid-column-start: 1;
+    white-space: nowrap;
+    background: yellow;
 }
 
 /*
@@ -36,6 +45,23 @@ LOGO
 
 .menu {
     grid-column-start: 6;
+    font-size: 1.5rem;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    background: pink;
+
+}
+
+.menu li {
+    margin-left: 1rem;
+    line-height: 4rem;
+    background: greenyellow;
 }
 
 /*
@@ -47,4 +73,16 @@ LOGO
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
     margin: 2rem;
+}
+
+.grid--gallery {
+    grid-template-rows: repeat(6, 1fr);
+}
+
+/*
+    IMAGE
+*/
+
+.image {
+    width:
 }
