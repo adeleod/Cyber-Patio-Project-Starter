@@ -12,10 +12,11 @@
 
 html {
     font-size: 62.5%;
+    font-family: sans-serif;
 }
 
 h1 {
-  font-size: 2em;  
+  font-size: 2rem;  
 }
 
 a {
@@ -23,7 +24,9 @@ a {
     text-decoration: none;
 }
 
-
+a:hover {
+    text-decoration: underline;
+}
 
 /*
 LOGO
@@ -36,7 +39,6 @@ LOGO
     line-height: 6rem;
     grid-column-start: 1;
     white-space: nowrap;
-    background: yellow;
 }
 
 /*
@@ -46,7 +48,6 @@ LOGO
 .menu {
     grid-column-start: 6;
     font-size: 1.5rem;
-    background-color: blue;
     display: flex;
     align-items: center;
 }
@@ -54,14 +55,12 @@ LOGO
 .menu ul {
     display: flex;
     list-style: none;
-    background: pink;
 
 }
 
 .menu li {
     margin-left: 1rem;
     line-height: 4rem;
-    background: greenyellow;
 }
 
 /*
@@ -84,5 +83,6 @@ LOGO
 */
 
 .image {
-    width:
+    width: 350px;
+    height: auto;
 }
