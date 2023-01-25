@@ -171,8 +171,22 @@ dialog img {
     grid-row-end: 3;
   }
 
-  /* 
+  
   .grid__video {
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    grid-column-start: 6;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+
+  }
+
+  .grid__video video {
     top: 0;
     left: 0;
     right: 0;
@@ -181,13 +195,8 @@ dialog img {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    grid-column-start: 6;
-    grid-column-end: 8
-    grid-row-start: 3
-    grid-row-end: 
-
   }
-  */
+  
 
   /*
    CLOSE
