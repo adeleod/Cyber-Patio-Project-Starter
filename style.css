@@ -8,7 +8,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: white;
 }
 
 body {
@@ -84,6 +83,14 @@ dialog img {
     MENU
 */
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    border-bottom: 3px dotted black;
+}
+
 .menu {
     grid-column-start: 6;
     font-size: 1.5rem;
@@ -91,15 +98,33 @@ dialog img {
     align-items: center;
 }
 
-.menu ul {
+.menu__primary {
     display: flex;
     list-style: none;
 
 }
 
-.menu li {
-    margin-left: 1rem;
+.menu__secondary {
+    display: none;
+    position: absolute;
+}
+
+.menu__primary-list {
+    margin-left: 4rem;
     line-height: 4rem;
+    position: relative;
+}
+
+.menu a:hover + .menu__secondary,
+.menu__secondary:hover {
+    display: block;
+
+}
+
+.menu__secondary-list {
+    font-size: 2rem;
+    white-space: nowrap;
+
 }
 
 /*
