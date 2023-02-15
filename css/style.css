@@ -41,6 +41,7 @@ section video {
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
   margin: 2rem;
+  padding: 5rem;
 }
 
 .grid video {
