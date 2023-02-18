@@ -1,16 +1,17 @@
 function init() {
   const onMouseOver = event => {
-    event.currentTarget.play();
+    event.currentTarget.innerHTML='Hello';
   };
 
   const onMouseLeave = event => {
-    event.currentTarget.pause();
+    console.log(event.currentTarget);
+    event.currentTarget.innerHTML='Goodbye';
   };
 
-  const videos = [...document.querySelectorAll('video')];
-  videos.forEach(video => {
-    video.addEventListener('mouseover', onMouseOver);
-    video.addEventListener('mouseleave', onMouseLeave);
+  const texts = [...document.querySelectorAll('.text')];
+  texts.forEach(text => {
+    text.addEventListener('mouseover', onMouseOver);
+    text.addEventListener('mouseleave', onMouseLeave);
   });
 }
 
