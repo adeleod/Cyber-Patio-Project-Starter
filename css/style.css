@@ -40,7 +40,7 @@ section video {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
+  gap: 3rem;
   margin: 2rem;
   padding: 5rem;
 }
