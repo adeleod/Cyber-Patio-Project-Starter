@@ -15,7 +15,7 @@ html {
 body {
   background: black;
   color: white;
-  cursor: url(../cursors/mushroom.png);
+  cursor: url(../cursors/mushroom.png), auto;
 }
 
 header {
@@ -51,6 +51,6 @@ section video {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  cursor: url(../cursors/skull.png);
+  cursor: url(../cursors/skull.png), pointer;
 }
 
