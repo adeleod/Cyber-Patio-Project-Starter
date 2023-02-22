@@ -1,57 +1,132 @@
-<!doctype html>
+<!doctype html> 
 <html>
-  <head>
-    <title>Adele Davies Illustration</title>
-    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script type="text/javascript" src="js/script.js"></script>
-  </head>
-  <body>
-    <header>
-      <h1><a href="/"></a><img height="150" src="img/adeledavies.gif" /></a></h1>
-      <nav>
-        <a href="index.html"><img height="70" src="img/work.png" /></a>
-        <a href="about.html"><img height="70" src="img/work.png" /></a>
-      </nav>
-    </header>
-    <main>
-      <div class="grid">
-        <a href="skeleton.html">
-          <video muted loop preload="metadata">
-            <source src="video/skeleton.mp4" type="video/mp4">
-          </video>
-        </a>
-        <a href="sketchbook.html">
-          <video muted loop preload="metadata">
-            <source src="video/sketchbook.mp4" type="video/mp4">
-          </video>
-        </a>
-        <a href="beautiful.html">
-          <video muted loop preload="metadata">
-            <source src="video/beautiful.mp4" type="video/mp4">
-          </video>
-        </a>
-        <a href="ultratumba.html">
-          <video muted loop preload="metadata">
-            <source src="video/ultratumba.mp4" type="video/mp4">
-          </video>
-        </a>
-        <a href="midnight.html">
-          <video muted loop preload="metadata">
-            <source src="video/midnight.mp4" type="video/mp4">
-          </video>
-        </a>
-        <a href="ARC.html">
-          <video muted loop preload="metadata">
-            <source src="video/ARC.mp4" type="video/mp4">
-          </video>
-        </a> 
-      </div>
-      <audio>
-        <source src=“sound/Romance.mp3” type=“audio/mpeg”>
-        </audio>
-    </main>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <title>ERROR 404</title>
+        <style>
+            @font-face{
+                font-family: "Oswald";
+                src: url(./style/fonts/Oswald/Oswald-VariableFont_wght.ttf);
+            }
+            *{
+                font-family: 'Oswald', sans-serif;
+                font-variation-settings: "wght" 100;
+            }
+            body, html{
+                margin: 0;
+                cursor: default;
+            }
+            section{
+                background: white;
+                font-size: 14vw;
+                position:relative;
+                height: 100vh;
+                width: 100vw;
+                float: left;                
+            }
+            .word{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                text-align: center;
+                color: white;
+                font-variation-settings: "wght" 700;
+                line-height: 16vw;
+                height: 10vw;
+                text-transform: uppercase;
+            }
+
+            .word:nth-of-type(1), .word:nth-of-type(2), .word:nth-of-type(3), .word:nth-of-type(4), .word:nth-of-type(5) {
+                animation: moveup 3s infinite alternate;
+                color:blue;
+            }
+
+            .word:nth-of-type(6), .word:nth-of-type(7), .word:nth-of-type(8), .word:nth-of-type(9), .word:nth-of-type(10) {
+                animation: movedown 3s infinite alternate;
+                color: hotpink;
+            }
+
+            .word:nth-of-type(1) {
+                animation-delay: 0s; 
+            }
+
+            .word:nth-of-type(6) {
+                animation-delay: 0s; 
+            }
+
+            .word:nth-of-type(2) {
+                animation-delay: .5s; 
+            }
+
+            .word:nth-of-type(7) {
+                animation-delay: .5s; 
+            }
+
+            .word:nth-of-type(3) {
+                animation-delay: 1s; 
+            }
+
+            .word:nth-of-type(8) {
+                animation-delay: 1s; 
+            }
+
+            .word:nth-of-type(4) {
+                animation-delay: 1.5s; 
+            }
+
+            .word:nth-of-type(9) {
+                animation-delay: 1.5s; 
+            }
+
+            .word:nth-of-type(5) {
+                animation-delay: 2s; 
+            }
+
+            .word:nth-of-type(10) {
+                animation-delay: 2s; 
+            }
+
+
+            @keyframes moveup {
+                from {
+                    transform: translate(-50%, -50%);
+                }
+                to {
+                    transform: translate(-50%, -150%);
+                }
+            }
+
+            @keyframes movedown {
+                from {
+                    transform: translate(-50%, -50%);
+            
+                }
+                to {
+                    transform: translate(-50%, 50%);
+
+                }
+            }
+            
+/*            from 1 to 5 : animation move up      from 6 to 10 : animation move down    */
+            .
+        </style>
+    </head>
+
+    <body>
+        <section>
+            <div class="word">404 error</div>
+            <div class="word">404 error</div>
+            <div class="word">404 error</div>
+            <div class="word">404 error</div>
+            <div class="word">404 error</div>
+            <div class="word">404 error</div>
+            <div class="word">404 error</div>
+            <div class="word">404 error</div>
+            <div class="word">404 error</div>
+            <div class="word">404 error</div>
+            <div class="word">404 error</div>
+        </section>
+    </body>
 </html>
