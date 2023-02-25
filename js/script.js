@@ -12,12 +12,15 @@ function init() {
   function onLinkClick(event) {
     event.preventDefault();
     sound.play();
-    console.log(event.currentTarget.getAttribute('href'))
-    window.location.href = event.currentTarget.getAttribute('href');
+    const link = event.currentTarget.getAttribute('href');
+    setTimeout(function () {
+      window.location.href = link;
+    }, 1500);
   }
 
   const videos = [...document.querySelectorAll('video')];
   const romance = document.querySelector('.romance');
+  romance.addEventListener('click', onLinkClick);
   romance.addEventListener('click', onLinkClick);
   videos.forEach(video => {
     video.addEventListener('mouseover', onMouseOver);
