@@ -15,7 +15,7 @@ html {
 body {
   background: black;
   color: white;
-  cursor: url(../cursors/mushroom.png), auto;
+  cursor: url(../cursors/MOUSEMUSH2.png), auto;
 }
 
 header {
@@ -24,6 +24,10 @@ header {
   padding-left: 5rem;
   padding-right: 5rem;
   padding-top: 3rem;
+}
+
+.onhover:hover {
+  filter:invert(200);
 }
 
 header img {
@@ -53,6 +57,49 @@ section video {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  cursor: url(../cursors/skull.png), pointer;
+  cursor: url(../cursors/MOUSEMUSHRED.png), pointer;
 }
+
+.project-page-grids {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5rem;
+  margin: 5rem;
+  padding: 5rem;
+}
+
+.project-page-grids-version2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  margin: 5rem;
+  padding: 5rem;
+}
+
+.project-page-grids video {
+  border-radius: 5rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+ .project-page-grids img {
+  border-radius: 5rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+} 
+
+.project-page-grids-version2 img {
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+} 
 
