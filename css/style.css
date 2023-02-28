@@ -6,9 +6,14 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Jost";
+  src: url(../fonts/Jost-VariableFont_wght.ttf);
+}
+
 html {
   font-size: 62.5%;
-  font-family: sans-serif;
+  font-family: "Jost";
   scroll-behavior: smooth;
 }
 
@@ -27,20 +32,11 @@ header {
 }
 
 .onhover:hover {
-  filter:invert(200);
+  mix-blend-mode: color green;
 }
 
 header img {
   mix-blend-mode: hard-light;
-}
-
-section {
-  margin: 2rem;
-}
-
-section video {
-  width: 100%;
-  height: auto;
 }
 
 .grid {
@@ -60,12 +56,25 @@ section video {
   cursor: url(../cursors/MOUSEMUSHRED.png), pointer;
 }
 
+h1 {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 19px;
+}
+
 .project-page-grids {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 5rem;
-  margin: 5rem;
-  padding: 5rem;
+  gap: 3rem;
+  margin: 1rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  padding-top: 5rem;
+  padding-bottom: 20rem;
 }
 
 .project-page-grids-version2 {
