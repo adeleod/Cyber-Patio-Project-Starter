@@ -24,15 +24,45 @@ body {
 }
 
 header {
-  display: flex;
+  display: inline-flex; 
   justify-content: space-between;
   padding-left: 5rem;
   padding-right: 5rem;
   padding-top: 3rem;
 }
 
-.onhover:hover {
-  mix-blend-mode: color green;
+.colorhoverwork {
+  background: white;
+  height: 100px;
+  width: 170px;
+  display: inline-flex;
+  -webkit-mask-image: url(../img/WORKTRANSPARENT.png);
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  transition: 0.2s ease background; 
+
+}
+
+.colorhoverwork:hover {
+  background: #e8d503;
+}
+
+.colorhoverabout {
+  background: white;
+  height: 100px;
+  width: 170px;
+  display: inline-flex;
+  -webkit-mask-image: url(../img/ABOUTTRANSPARENT.png);
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  transition: 0.2s ease background; 
+
+}
+
+.colorhoverabout:hover {
+  background: #e8d503;
 }
 
 header img {
@@ -42,9 +72,12 @@ header img {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  gap: 4rem;
   margin: 2rem;
-  padding: 5rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
 }
 
 .grid video {
@@ -53,7 +86,7 @@ header img {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  cursor: url(../cursors/MOUSEMUSHRED.png), pointer;
+  cursor: url(../cursors/HANDCURSOR3.png), pointer;
 }
 
 h1 {
@@ -111,4 +144,13 @@ p {
   object-position: center;
 
 } 
+
+.arrows-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  padding-bottom: 10rem;
+  
+}
 
